@@ -1,0 +1,10 @@
+name = "triglav_ada"
+description = "TriglavOS made in ADA with SPARK"
+version = "0.1.0-dev"
+
+authors = ["Melvil HART BRUNE"]
+maintainers = ["Melvil HART BRUNE <hbmelvil@gmail.com>"]
+maintainers-logins = ["slovenskointrovertiran"]
+licenses = "custom-AllRightsReserved"
+website = ""
+tags = ["osdev"]
