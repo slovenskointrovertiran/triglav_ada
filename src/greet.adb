@@ -1,7 +1,7 @@
-with Ada.Text.IO;
+with Ada.Text_IO;
 
-procedure Greet is
-begin
-	-- This program is not related to the repostory. It's a technical test. It prints "Hello, World !" to the screen.
-	Ada.Text.IO.Put_Line ("Hello, World !");
-end Greet;
+procedure Salutations is 
+	begin
+	Ada.Text_IO.Put_Line ("Salutations tout le monde !");
+end Salutations;
+
