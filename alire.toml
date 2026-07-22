@@ -8,3 +8,6 @@ maintainers-logins = ["slovenskointrovertiran"]
 licenses = "custom-AllRightsReserved"
 website = ""
 tags = ["osdev"]
+
+[[depends-on]]
+gnatprove = "^16.1.0"

@@ -1,7 +1,7 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
-procedure Check_Positive is
+procedure Check_Positive with SPARK_Mode => On is
 	N : Integer;
 begin
 	-- Put a string
@@ -16,4 +16,3 @@ begin
 		Put_Line (" is a positive number.");
 	end if;
 end Check_Positive;
-
