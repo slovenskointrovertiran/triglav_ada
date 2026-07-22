@@ -1,7 +1,19 @@
-with Ada.Text_IO;
+with Ada.Text_IO; use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO;
 
-procedure Salutations is 
-	begin
-	Ada.Text_IO.Put_Line ("Salutations tout le monde !");
-end Salutations;
+procedure Check_Positive is
+	N : Integer;
+begin
+	-- Put a string
+	Put ("Enter an integer value :");
+
+	-- Read an integer value
+	Get (N);
+
+	if N > 0 then
+		-- Put an integer 
+		Put (N);
+		Put_Line (" is a positive number.");
+	end if;
+end Check_Positive;
 
