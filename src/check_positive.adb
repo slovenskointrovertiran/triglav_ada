@@ -5,7 +5,7 @@ procedure Check_Positive with SPARK_Mode => On is
 	N : Integer;
 begin
 	-- Put a string
-	Put ("Enter an integer value :");
+	Put_Line ("Enter an integer value :");
 
 	-- Read an integer value
 	Get (N);
@@ -14,5 +14,8 @@ begin
 		-- Put an integer 
 		Put (N);
 		Put_Line (" is a positive number.");
+	elsif N < 0 then
+		Put (N);
+		Put_Line (" is not a positive number.");
 	end if;
 end Check_Positive;
