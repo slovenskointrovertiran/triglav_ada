@@ -1,2 +1,2 @@
 May you wonder, why am I letting generic ada programs here ? It's currently for learning and I will share progressively my progress and skills here, then when I will be ready, start TriglavOS in Ada.
-Pourquoi je laisse des programmes en Ada n'ayant pas vraiment de rapport avec mon projet ? C'est pour partager l'acquisition de compétences et montrer mon progrès. Quand je serai près (dans un certain moment je pourrais commencer TriglavOS.
+Pourquoi je laisse des programmes en Ada n'ayant pas vraiment de rapport avec mon projet ? C'est pour partager l'acquisition de nouvelles compétences et montrer mon progrès. Quand je serai près (dans un moment) mon projet prendra forme ici.
