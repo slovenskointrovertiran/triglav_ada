@@ -1,5 +1,6 @@
 with Ada.Text_IO; use Ada.Text_IO;
 with Week.Child; use Week.Child;
+with Week.Child.Grandchild; use Week.Child.Grandchild;
 
 procedure Main is
 begin
