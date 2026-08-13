@@ -1,9 +1,7 @@
-with Ada.Text_IO; use Ada.Text_IO;
-
-with Book.Additional_Operations; use Book.Additional_Operations;
+with Ada.Text_IO;
 
 procedure Main is
+	package TTO renames Ada.Text_IO;
 begin
-	Put_Line (Get_Extended_Title);
-	Put_Line (Get_Extended_Author);
+	TIO.Put_Line ("Hello");
 end Main;
