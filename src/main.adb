@@ -1,15 +1,15 @@
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Main is
-	type My_Int is range 1 .. 20;
-	A : My_Int := 12;
-	B : My_Int := 15;
-	M : My_Int := (A + B) / 2; -- No overflow here
+	type Mod_Int is mod 2 ** 5;
+
+	A : constant Mod_Int := 20;
+	B : constant Mod_Int := 15;
+
+	M : constant Mod_Int := A + B;
 
 begin
 	for I in 1 .. M loop
 		Put_Line ("Hello, World !");
 	end loop;
-
 end Main;
-
