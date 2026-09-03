@@ -1,13 +1,18 @@
 with Ada.Text_IO; use Ada.Text_IO;
+with Measurements;
 
-procedure Main is 
-	Buf : String := "Hello ...";
+procedure Main is
+	subtype Degrees is Measurements.Degree_Celsius;
 
-	Full_Name : String := "John Smith";
+	T : Degrees renames Measurements.Current_Temperature;
 begin
-	Buf (7 .. 9) := "Bob";
+	T := 5.0;
 
-	Put_Line (Buf);
+	Put_Line (Degrees'Image (T));
+	Put_Line (Degrees'Image (Measurements.Current_Temperature));
 
-	Put_Line ("Hi" & Full_Name (1 .. 4));
+	T := T + 2.5;
+
+	Put_Line (Degrees'Image (T));
+	Put_Line (Degrees'Image (Measurements.Current_Temperature));
 end Main;
