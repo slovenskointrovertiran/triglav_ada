@@ -5,4 +5,6 @@ package Pkg is
 
 	function Convert (Self : SSID) return String;
 
+	function Convert (Self : Integer) return String;
+
 end Pkg;
