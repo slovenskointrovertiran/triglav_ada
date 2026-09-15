@@ -1,10 +1,9 @@
 with Dates; use Dates;
 
 package Access_Types is
+	type Date_Acc is access Date;
 	type String_Acc is access String;
 
-	Msg : String_Acc;
-
-	Buffer : String_Acc := new String (1 .. 10);
-
+	D : Date_Acc := new Date'(30, November, 2011);
+	Msg_Acc := new String'("Hello");
 end Access_Types;
