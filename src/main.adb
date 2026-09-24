@@ -1,7 +1,22 @@
 with Variant_Record; use Variant_Record;
+with Ada.Text_IO; use Ada.Text_IO;
 
-procedure Main is
-	E : Expr := (Num, 12);
-begin
-	E.Left := new Expr'(Num, 15);
-end Main;
+procedure Main is 
+	function Eval_Expr (E : Expr) return Integer is
+		(case E.Kind is
+		when Bin_Op_Plus =>
+			Eval_Expr (E.Left.all)
+			+ Eval_Expr (E.Right.all),
+		when Bin_Op_Minus =>
+			Eval_Expr (E.Left.all)
+			- Eval_Expr (E.Right.all),
+		when Num => E.Val);
+
+		E : Expr := (Bin_Op_Plus,
+		             new Expr'(Bin_Op_Minus,
+		                       new Expr'(Num, 12),
+			               new Expr'(Num, 15)),
+			     new Expr'(Num, 3));
+	begin
+		Put_Line (Integer'Image (Eval_Expr (E)));
+	end Main;
